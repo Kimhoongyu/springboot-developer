@@ -9,14 +9,14 @@ import me.kimhoongyu.springbootdeveloper.domain.Article;
 @AllArgsConstructor
 @Getter
 public class AddArticleRequest {
+    private String title;
 
-	private String title;
-	private String content;
-	
-	public Article toEntity() {
-		return Article.builder()
-					  .title(title)
-					  .content(content)
-					  .build();
-	}
+    private String content;
+
+    public Article toEntity() {
+        return Article.builder()
+                .title(title)
+                .content(content)
+                .build();
+    }
 }
