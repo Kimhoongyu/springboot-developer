@@ -1,7 +1,9 @@
 package me.kimhoongyu.springbootdeveloper.dto;
 
+import lombok.Getter;
 import me.kimhoongyu.springbootdeveloper.domain.Article;
 
+@Getter
 public class ArticleListViewResponse {
 
 	private final Long id;
